@@ -11,17 +11,17 @@ we use sequelize first: CREATE DATABASE task; than write .env file settings
 
 
 ## Query
-> users \n
-> api_keys \n
-> getHello 
+> users
+> api_keys
+> getHello
 
 
 ## Mutation
-> register  \n
-> login \n
-> commits \n
-> api_key \n
-> delete_api \n
+> register
+> login
+> commits
+> api_key
+> delete_api
 > add_admin
 
 # Queries
