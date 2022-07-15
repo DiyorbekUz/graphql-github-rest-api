@@ -1,7 +1,7 @@
 # graphql-github-rest-api
 
 ## First set .env file
-![Query](https://github.com/DiyorbekUz/graphql-github-rest-api/images/env.png)
+![Query](/images/env.png)
 
 ```
 we use sequelize first: CREATE DATABASE task; than write .env file settings
