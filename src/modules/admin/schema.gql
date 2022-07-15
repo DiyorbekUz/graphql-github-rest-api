@@ -1,0 +1,23 @@
+type Query {
+    api_keys: [API_KEY]
+}
+
+type API_KEY {
+    apiId: ID
+    apiKey: String
+    apiCreatedAt: String
+}
+
+
+type Mutation {
+    
+    api_key(
+        api_key: String, 
+        generate: Boolean,
+    ): MutationResponse!
+
+    delete_api(
+        apiId: ID!,
+    ): MutationResponse!
+
+}

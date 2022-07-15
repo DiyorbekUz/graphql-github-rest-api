@@ -1,0 +1,32 @@
+{
+    "name": "GARPQL-GITHUB-REST-API",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node src/server.js",
+        "start:dev": "nodemon src/server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@graphql-tools/schema": "^8.3.11",
+        "apollo-server-express": "^3.7.0",
+        "cors": "^2.8.5",
+        "dotenv": "^16.0.1",
+        "express": "^4.18.1",
+        "graphql": "^16.5.0",
+        "jsonwebtoken": "^8.5.1",
+        "pg": "^8.7.3",
+        "pg-hstore": "^2.3.4",
+        "randomstring": "^1.2.2",
+        "sequelize": "^6.20.1",
+        "sha256": "^0.2.0"
+    },
+    "imports": {
+        "#pg": "./src/config/db.js",
+        "#config/*": "./src/config/*.js"
+    }
+}

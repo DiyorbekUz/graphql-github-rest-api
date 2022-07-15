@@ -1,0 +1,10 @@
+type MutationResponse {
+    status: Int!
+    message: String!
+    token: String
+    data: GlobalType
+    API_KEY: String
+}
+
+## union types
+union GlobalType = User | API_KEY | Commits

@@ -1,0 +1,57 @@
+type Query {
+    users(page: Int, limit: Int): [User]
+    getHello: String
+}
+
+type User {
+    userId: ID
+    username: String
+    userIsAdmin: Boolean
+    userCreatedAt: String
+    apiKey: String
+}
+
+type one {
+    name: String
+    email: String
+    date: String
+}
+
+type subTwo {
+    sha: String
+    url: String
+}
+
+type subTwo2 {
+    payload: String
+    signature: String
+    verified: Boolean
+}
+
+type Commits{
+    author: one
+    message: String
+    tree: subTwo
+    url: String
+    comment_count: Int
+    verification: subTwo2
+}
+
+type Mutation {
+    register(
+        username: String!, 
+        password: String!,
+    ): MutationResponse!
+
+    login(
+        username: String!,
+        password: String
+    ): MutationResponse!
+
+    commits(
+        page: Int,
+        limit: Int
+    ): MutationResponse!
+
+    add_admin(userId: ID!): MutationResponse!
+}
