@@ -27,7 +27,7 @@ we use sequelize first: CREATE DATABASE task; than write .env file settings
 # Queries
 ### users Query
 
-![Query](/images/usersquery.png)
+![Query](/images/userquery.png)
 
 > we need to be admin to use this query
 
