@@ -55,8 +55,8 @@ we use sequelize first: CREATE DATABASE task; than write .env file settings
 ![Query](/images/api_key.png)
 <b> if you want random API KEY you choose generate, but you want custom API KEY input choose api_key and input api_key </b>
  
-### delete_api input > apiId 
+### delete_api | input > apiId 
 > delete API KEY only use admins
 
-### add_admin mutation input > userId
+### add_admin mutation | input > userId
 > Set user as admin only use admins
